@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Morgan Rogers Portfolio - Web Development, Security, and System Administration Projects">
+    <title>Portfolio | Morgan Rogers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+     <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Morgan Rogers</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>                
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <p>Showcasing my projects and technical expertise</p>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="systems">Systems</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Web Development Projects -->
+                <article class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/Profile.jpg" alt="Portfolio Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>Responsive portfolio built with HTML5, CSS3, and JavaScript</p>
+                            <div class="overlay-tags">
+                                <span>HTML5</span>
+                                <span>CSS Grid</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            A comprehensive portfolio website demonstrating modern web development practices.
+                            Features responsive design using CSS Grid and Flexbox, semantic HTML5, and interactive
+                            JavaScript functionality including form validation and DOM manipulation.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PromptNebula05/Portfolio-Project" class="project-link" target="_blank" rel="noopener">
+                                <span>View Code</span> →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/fresh-market.jpg" alt="React Skills Showcase" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>React Skills Showcase</h3>
+                            <p>Interactive skills display component built with React</p>
+                            <div class="overlay-tags">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Components</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>React Skills Showcase</h3>
+                        <p>
+                            An interactive component built with React and TypeScript that dynamically displays
+                            technical skills with animated progress bars and filtering capabilities. Demonstrates
+                            component-based architecture and state management.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">JSX</span>
+                            <span class="tech-tag">Hooks</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PromptNebula05/Inventory-Management" class="project-link" target="_blank" rel="noopener">
+                                <span>View Code</span> →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/contact-form.jpg" alt="Contact Form Application" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Dynamic Contact Form</h3>
+                            <p>Form with comprehensive JavaScript validation</p>
+                            <div class="overlay-tags">
+                                <span>JavaScript</span>
+                                <span>DOM</span>
+                                <span>Validation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Dynamic Contact Form</h3>
+                        <p>
+                            A sophisticated contact form featuring real-time validation using vanilla JavaScript
+                            and extensive DOM manipulation. Includes email validation, required field checking,
+                            and user-friendly error messages.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">DOM API</span>
+                            <span class="tech-tag">Event Handling</span>
+                            <span class="tech-tag">Regex</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PromptNebula05/Contact-Form" class="project-link" target="_blank" rel="noopener">
+                                <span>View Code</span> →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Security Projects -->
+                <article class="portfolio-item" data-category="security">
+                    <div class="portfolio-image">
+                        <img src="images/sec-lab.jpg" alt="Security Lab Environment" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Home Security Lab</h3>
+                            <p>Comprehensive testing environment for security research</p>
+                            <div class="overlay-tags">
+                                <span>VirtualBox</span>
+                                <span>Security</span>
+                                <span>Networking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Home Security Lab Environment</h3>
+                        <p>
+                            Built and maintained a comprehensive home lab for security testing and network analysis.
+                            Implemented virtualization using VirtualBox and Docker for various security scenarios.
+                            Configured secure networking environments with VLANs and firewall rules.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">VirtualBox</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">ParrotOS/Kali</span>
+                            <span class="tech-tag">VLANs</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="security">
+                    <div class="portfolio-image">
+                        <img src="images/net-tools.jpg" alt="Network Analysis Tools" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Network Analysis Tools</h3>
+                            <p>Tools for network enumeration and analysis</p>
+                            <div class="overlay-tags">
+                                <span>Python</span>
+                                <span>Nmap</span>
+                                <span>Wireshark</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Network Analysis Tools</h3>
+                        <p>
+                            Developed custom Python scripts for network enumeration and traffic analysis.
+                            Integrated with Nmap for port scanning and service detection. Created automated
+                            reporting tools for security assessments.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Nmap</span>
+                            <span class="tech-tag">Wireshark</span>
+                            <span class="tech-tag">Bash</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="security">
+                    <div class="portfolio-image">
+                        <img src="images/sec-an.jpg" alt="Security Training Projects" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>HTB Academy Projects</h3>
+                            <p>Completed SOC Analyst Path</p>
+                            <div class="overlay-tags">
+                                <span>Web Apps</span>
+                                <span>AD Security</span>
+                                <span>Pentesting</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Hack the Box Academy - SOC Analyst Path</h3>
+                        <p>
+                            Completed comprehensive security training covering Linux/Windows fundamentals,
+                            network enumeration, penetration testing, Active Directory security, and web
+                            application testing. Hands-on labs and practical security exercises.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Penetration Testing</span>
+                            <span class="tech-tag">Active Directory</span>
+                            <span class="tech-tag">Web Security</span>
+                            <span class="tech-tag">Linux</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- System Projects -->
+                <article class="portfolio-item" data-category="systems">
+                    <div class="portfolio-image">
+                        <img src="images/ad-man.jpg" alt="Active Directory Management" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Enterprise AD Management</h3>
+                            <p>Active Directory administration and automation</p>
+                            <div class="overlay-tags">
+                                <span>Active Directory</span>
+                                <span>PowerShell</span>
+                                <span>Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Enterprise Active Directory Management</h3>
+                        <p>
+                            Managed enterprise Active Directory infrastructure for city-wide operations.
+                            Implemented automated user provisioning and group policy management using PowerShell.
+                            Created comprehensive documentation and disaster recovery procedures.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Active Directory</span>
+                            <span class="tech-tag">PowerShell</span>
+                            <span class="tech-tag">Group Policy</span>
+                            <span class="tech-tag">Windows Server</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="systems">
+                    <div class="portfolio-image">
+                        <img src="images/auto-scripts.jpg" alt="Automation Scripts" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>System Automation Suite</h3>
+                            <p>Scripts for system monitoring and maintenance</p>
+                            <div class="overlay-tags">
+                                <span>Python</span>
+                                <span>Bash</span>
+                                <span>Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>System Automation & Monitoring Suite</h3>
+                        <p>
+                            Developed comprehensive automation scripts for system monitoring, backup verification,
+                            maintenance tasks. Implemented log analysis tools and automated reporting systems.
+                            Reduced manual intervention and improved system reliability.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Bash</span>
+                            <span class="tech-tag">PowerShell</span>
+                            <span class="tech-tag">Cron</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="systems">
+                    <div class="portfolio-image">
+                        <img src="images/vm.jpg" alt="Virtualization Infrastructure" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Virtualization</h3>
+                            <p>VirtualBox-based virtual environment management</p>
+                            <div class="overlay-tags">
+                                <span>VirtualBox</span>
+                                <span>Docker</span>
+                                <span>Containers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Virtualization Infrastructure Design</h3>
+                        <p>
+                            Designed and implemented virtualization infrastructure using VirtualBox for enterprise
+                            applications. Configured Docker containers for microservices deployment. Optimized
+                            resource allocation and implemented high-availability solutions.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">VirtualBox</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Networking</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skill Mastery Section -->
+    <section class="skills-mastery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Course Skills Demonstrated</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mastery-grid">
+                <div class="mastery-card">
+                    <h3>✓ HTML5</h3>
+                    <p>Semantic markup, accessibility, forms, and modern HTML5</p>
+                </div>
+                <div class="mastery-card">
+                    <h3>✓ CSS3</h3>
+                    <p>Grid, Flexbox, animations, responsive design, and modern layouts</p>
+                </div>
+                <div class="mastery-card">
+                    <h3>✓ JavaScript</h3>
+                    <p>ES6+, event handling, async programming, and DOM manipulation</p>
+                </div>
+                <div class="mastery-card">
+                    <h3>✓ React</h3>
+                    <p>Components, hooks, state management, and modern React patterns</p>
+                </div>
+                <div class="mastery-card">
+                    <h3>✓ TypeScript</h3>
+                    <p>Type safety, interfaces, and typed React components</p>
+                </div>
+                <div class="mastery-card">
+                    <h3>✓ DOM Manipulation</h3>
+                    <p>Dynamic content, event listeners, and interactive features</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>I'm always interested in hearing about new projects and opportunities.</p>
+            <a href="contact.html" class="btn btn-light">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Morgan Rogers</h3>
+                    <p>Computer Information Systems Professional</p>
+                    <p>Boston University - MS in CIS</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="https://github.com/PromptNebula05" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/morgan-rogers-0042972b9/" target ="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="mailto:morogers@bu.edu">Email</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Cornish, Maine 04020</p>
+                    <p>(207) 823-0747</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morgan Rogers. All rights reserved.</p>
+                <p class="footer-note">Built with HTML5, CSS3, JavaScript & React</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

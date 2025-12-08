@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Morgan Rogers - Computer Information Systems Professional specializing in Web Development, Network Security, and System Administration">
+    <meta name="keywords" content="Morgan Rogers, Web Developer, CIS Professional, Portfolio">
+    <meta name="author" content="Morgan Rogers">
+    <title>Morgan Rogers | CIS Professional & Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+     <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Morgan Rogers</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>                
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Morgan Rogers</span></h1>
+            <p class="hero-subtitle">Computer Information Systems Professional</p>
+            <p class="hero-description">Specializing in Web Development, Network Security, and Systems Administration</p>
+            <div class="hero-buttons">
+                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <!-- About Preview Section-->
+    <section class="about-preview" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/Profile.jpg" alt="Morgan Rogers" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h3>CIS Professional with a Passion for Technology</h3>
+                    <p>
+                        I am an Information Systems professional with a strong foundation in networking,
+                        system administration, and cybersecurity. Currently pursuing a Master's in Computer
+                        Information Systems at Boston University, specializing in Web Application Development
+                        and Network Systems.
+                    </p>
+                    <p>
+                        With experience in both Windows and Linux environments, I bring practical knowledge
+                        of security tools, system architecture, and modern web development technologies to
+                        every project I undertake.
+                    </p>
+                    <a href="about.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section -->
+    <section class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Expertise</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>HTML5, CSS3, JavaScript, React, TypeScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Network Security, Penetration Testing, Security Analysis</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>System Administration</h3>
+                    <p>Linux, Windows Server, Active Directory, VirtualBox</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Programming</h3>
+                    <p>Python, Java, C#, Go, Rust</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview Section-->
+    <section class="projects-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/home-lab.jpg" alt="Home Lab Environment" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Home Lab Environment</h3>
+                        <p>Comprehensive home lab for security testing and network analysis using VirtualBox and Docker.</p>
+                        <div class="project-tags">
+                            <span class="tag">VirtualBox</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Security</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/web-dev.jpg" alt="Web Development Projects" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Development Projects</h3>
+                        <p>Modern web applications built with React, TypeScript, and responsive design principles.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">CSS Grid</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/sec-an.jpg" alt="Security Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Security Analysis</h3>
+                        <p>Security tools and scripts for network enumeration and penetration testing.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Nmap</span>
+                            <span class="tag">Wireshark</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center">
+                <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>I'm always interested in hearing about new projects and opportunities.</p>
+            <a href="contact.html" class="btn btn-light">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Morgan Rogers</h3>
+                    <p>Computer Information Systems Professional</p>
+                    <p>Boston University - MS in CIS</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="https://github.com/PromptNebula05" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/morgan-rogers-0042972b9/" target ="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="mailto:morogers@bu.edu">Email</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Cornish, Maine 04020</p>
+                    <p>(207) 823-0747</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morgan Rogers. All rights reserved.</p>
+                <p class="footer-note">Built with HTML5, CSS3, JavaScript & React</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

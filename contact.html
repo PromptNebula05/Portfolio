@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Contact Morgan Rogers - Get in touch for opportunities and collaborations">
+    <title>Contact | Morgan Rogers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+     <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Morgan Rogers</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>                
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Let's discuss opportunities, projects, or collaborations</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info-panel">
+                    <h2>Contact Information</h2>
+                    <p class="contact-description">
+                        I'm always interested in hearing about new opportunities, projects,
+                        and ways to collaborate. Feel free to reach out through any of the
+                        channels belows or send me a message using the contact form.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <a href="mailto:morogers@bu.edu">morogers@bu.edu</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <a href="tel:+12078230747">(207) 823-0747</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Cornish, Maine 04020</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-text">
+                                <h3>LinkedIn</h3>
+                                <a href="https://linkedin.com/in/morgan-rogers-0042972b9/" target="_blank" rel="noopener">
+                                    View Profile
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">💻</div>
+                            <div class="contact-text">
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/PromptNebula05" target="_blank" rel="noopener">
+                                    @PromptNebula05
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h3>Availability</h3>
+                        <p>Currently available for:</p>
+                        <ul>
+                            <li>Full-time opportunities</li>
+                            <li>Contract work</li>
+                            <li>Consulting projects</li>
+                            <li>Collaborative ventures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-panel">
+                    <h2>Send a Message</h2>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-control"
+                                placeholder="Your full name"
+                                required
+                                aria-required="true"
+                            >
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-control"
+                                placeholder="your.email@example.com"
+                                required
+                                aria-required="true"
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Phone Number <span class="required">*</span></label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="form-control"
+                                placeholder="(123) 456-7890"
+                            >
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Subject <span class="required">*</span></label>
+                            <select
+                                id="subject"
+                                name="subject"
+                                class="form-control"
+                                required
+                                aria-required="true"
+                            >
+                                <option value="">Select a subject</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="internship">Internship</option>
+                                <option value="project">Project Collaboration</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Message <span class="required">*</span></label>
+                            <textarea
+                                id="email"
+                                name="email"
+                                class="form-control"
+                                rows="6"
+                                placeholder="Tell me about your inquiry..."
+                                required
+                                aria-required="true"
+                            ></textarea>
+                            <span class="error-message" id="messageError"></span>
+                            <span class="char-count" id="charCount">0 / 500 characters</span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input
+                                    type="checkbox"
+                                    id="consent"
+                                    name="consent"
+                                    required
+                                    aria-required="true"
+                                >
+                                <span>I agree to be contacted regarding my inquiry <span class="required">*</span></span>
+                            </label>
+                            <span class="error-message" id="consentError"></span>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader" style="display: none;">Sending...</span>
+                            </button>
+                            <button type="reset" class="btn btn-secondary">Clear Form</button>
+                        </div>
+
+                        <div id="formSuccess" class="success-message" style="display: none;">
+                            <strong>✓ Success!</strong> Your message has been sent. I'll get back to you soon.
+                        </div>
+
+                        <div id="formError" class="form-error-message" style="display: none;">
+                            <strong>✗ Error!</strong> Please correct the errors above and try again.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What is your availability?</h3>
+                    <p>
+                        I'm currently pursuing my Mayster's degree (expected August 2026) and am available
+                        for part-time opportunities during the academic year and full-time during breaks.
+                        I'm also available for remote work arrangements.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work on freelance projects?</h3>
+                    <p>
+                        Yes, I'm open to freelance and consulting projects, particularly those involving
+                        web development, security assessments, or system administration. Feel free to
+                        reach out with your project details.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>How quickly do you respond to inquiries?</h3>
+                    <p>
+                        I strive to respond to all inquiries within 24-48 hours. For urgent matters,
+                        please indicate so in your message, and I'll prioritize your request.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Morgan Rogers</h3>
+                    <p>Computer Information Systems Professional</p>
+                    <p>Boston University - MS in CIS</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="https://github.com/PromptNebula05" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/morgan-rogers-0042972b9/" target ="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="mailto:morogers@bu.edu">Email</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Cornish, Maine 04020</p>
+                    <p>(207) 823-0747</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morgan Rogers. All rights reserved.</p>
+                <p class="footer-note">Built with HTML5, CSS3, JavaScript & React</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

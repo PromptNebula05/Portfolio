@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo Gallery - Morgan Rogers' work and experiences">
+    <title>Gallery | Morgan Rogers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+     <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Morgan Rogers</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>                
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
+    
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>A visual journey through my work and experiences</p>
+        </div>
+    </header>
+
+    <!-- Gallery Controls -->
+    <section class="gallery-controls">
+        <div class="container">
+            <div class="gallery-filter">
+                <button class="gallery-filter-btn active" data-filter="all">All Images</button>
+                <button class="gallery-filter-btn" data-filter="work">Work</button>
+                <button class="gallery-filter-btn" data-filter="projects">Projects</button>
+                <button class="gallery-filter-btn" data-filter="technology">Technology</button>
+            </div>
+            <div class="gallery-view-toggle">
+                <button class="view-btn active" data-view="grid" aria-label="Grid view">
+                    <span>⊞</span>
+                </button>
+                <button class="view-btn" data-view="list" aria-label="List view">
+                    <span>☰</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="work tech">
+                    <div class="gallery-image">
+                        <img src="images/home-lab.jpg" alt="Technology workspace setup" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Workspace Setup</h3>
+                                <p>Modern development environment</p>
+                                <button class="view-full-btn" data-image="images/home-lab.jpg">
+                                    View Full Size
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Development Workspace</h4>
+                        <p>My daily setup for coding and system administration</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="projects tech">
+                    <div class="gallery-image">
+                        <img src="images/net-tools.jpg" alt="Technical project in progress" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Project Development</h3>
+                                <p>Building innovative solutions</p>
+                                <button class="view-full-btn" data-image="images/net-tools.jpg">
+                                    View Full Size
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Technical Project</h4>
+                        <p>Working on security analysis tools</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="tech projects">
+                    <div class="gallery-image">
+                        <img src="images/fresh-market.jpg" alt="Web development project" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Web Development</h3>
+                                <p>Creating responsive web applications</p>
+                                <button class="view-full-btn" data-image="images/fresh-market.jpg">
+                                    View Full Size
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Web Application</h4>
+                        <p>Responsive design implementation using CSS Grid</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="work tech">
+                    <div class="gallery-image">
+                        <img src="images/ad-man.jpg" alt="System infrastructure" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Infrastructure</h3>
+                                <p>Enterprise system architecture</p>
+                                <button class="view-full-btn" data-image="images/ad-man.jpg">
+                                    View Full Size
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>System Infrastructure</h4>
+                        <p>Managing enterprise-level network systems</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="projects tech">
+                    <div class="gallery-image">
+                        <img src="images/sec-lab.jpg" alt="Security lab environment" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Security Lab</h3>
+                                <p>Cybersecurity testing environment</p>
+                                <button class="view-full-btn" data-image="images/sec-lab.jpg">
+                                    View Full Size
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Home Security Lab</h4>
+                        <p>Virtualized environment for security research</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 (Additional context) -->
+                <div class="gallery-item" data-category="work">
+                    <div class="gallery-image">
+                        <img src="images/github.jpg" alt="Collaborative work environment" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Collaboration</h3>
+                                <p>Team-based problem solving</p>
+                                <button class="view-full-btn" data-image="images/github.jpg">
+                                    View Full Size
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Team Collaboration</h4>
+                        <p>Working with IT teams on enterprise solutions</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-category="projects">
+                    <div class="gallery-image">
+                        <img src="images/sec-an.jpg" alt="Learning and development" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Continuous Learning</h3>
+                                <p>Expanding technical knowledge</p>
+                                <button class="view-full-btn" data-image="images/sec-an.jpg">
+                                    View Full Size
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Professional Development</h4>
+                        <p>Hack the Box Academy training sessions</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-category="tech">
+                    <div class="gallery-image">
+                        <img src="images/web-dev.jpg" alt="Modern technology stack" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Tech Stack</h3>
+                                <p>Modern development tools</p>
+                                <button class="view-full-btn" data-image="images/github.jpg">
+                                    View Full Size
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Technology Stack</h4>
+                        <p>React, TypeScript, and modern web frameworks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+            <button class="lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+            <img src="" alt="Full size gallery image" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+    
+    <!-- Gallery Stats Section -->
+    <section class="gallery-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="8">0</div>
+                    <div class="stat-label">Images</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="4">0</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>I'm always interested in hearing about new projects and opportunities.</p>
+            <a href="contact.html" class="btn btn-light">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Morgan Rogers</h3>
+                    <p>Computer Information Systems Professional</p>
+                    <p>Boston University - MS in CIS</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="https://github.com/PromptNebula05" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/morgan-rogers-0042972b9/" target ="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="mailto:morogers@bu.edu">Email</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Cornish, Maine 04020</p>
+                    <p>(207) 823-0747</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morgan Rogers. All rights reserved.</p>
+                <p class="footer-note">Built with HTML5, CSS3, JavaScript & React</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
