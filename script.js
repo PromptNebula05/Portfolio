@@ -12,7 +12,7 @@ class Navigation {
     constructor() {
         this.navbar = document.getElementById('navbar');
         this.navToggle = document.getElementById('navToggle');
-        this.navMenu = document.getElementById('navMenu')
+        this.navMenu = document.getElementById('navMenu');
         this.init();
     }
 
@@ -97,7 +97,7 @@ class FormValidator {
     }
 
     int() {
-        this.form.addEventListener('submint', (e) => this.handleSubmit(e));
+        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
 
         // Real-time validation
         const inputs = this.form.querySelectorAll('input, textarea, select');
@@ -402,7 +402,7 @@ class PortfolioFilter {
 
     init() {
         this.filterButtons.forEach(button => {
-            button.addEventListener('click', () => this.filterButtons(button));
+            button.addEventListener('click', () => this.filterPortfolio(button));
         });
     }
 
@@ -438,7 +438,7 @@ class PortfolioFilter {
 // =========================================
 class Gallery {
     constructor() {
-        this.galleryItems = document.querySelectorAll('gallery-item');
+        this.galleryItems = document.querySelectorAll('.gallery-item');
         this.filterButtons = document.querySelectorAll('.gallery-filter-btn');
         this.viewButtons = document.querySelectorAll('.view-btn');
         this.lightbox = document.getElementById('lightbox');
@@ -485,7 +485,7 @@ class Gallery {
                 if (categories && categories.includes(filterValue)) {
                     item.classList.remove('hidden');
                 } else {
-                    item.classList.add('hidden')
+                    item.classList.add('hidden');
                 }
             }
         });
@@ -496,11 +496,11 @@ class Gallery {
 
     toggleView(button) {
         const viewType = button.getAttribute('data-view');
-        const galleryGrid = document.getElementById('galleryGrid')
+        const galleryGrid = document.getElementById('galleryGrid');
 
         // Update active button
         this.viewButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active')
+        button.classList.add('active');
 
         // Toggle view
         if (viewType === 'list') {
@@ -674,7 +674,7 @@ class StatCounter {
     }
 
     animateCounter(element) {
-        const target = parseInt(element.getElementById('data-count')) || 0;
+        const target = parseInt(element.getAttribute('data-count')) || 0;
         const duration = 2000;
         const increment = target / (duration / 16);
         let current = 0;
@@ -718,7 +718,7 @@ class ResumeDownloader {
 // =========================================
 class ScrollAnimations {
     constructor() {
-        this.animatedElements = document.querySelectorAll('data-animate');
+        this.animatedElements = document.querySelectorAll('[data-animate]');
         if (this.animatedElements.length > 0) {
             this.init();
         }
